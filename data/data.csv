@@ -9,4 +9,3 @@ PatientID,Age,Gender,TumorSize,NodeStatus,TreatmentType,SurvivalStatus
 8,55,Male,,Negative,Radiation,Did Not Survive
 9,43,Male,2.9,Positive,Chemotherapy,Survived
 10,38,Female,2.6,Negative,Surgery,Survived
-10,38,Female,2.6,Negative,Surgery,Survived
