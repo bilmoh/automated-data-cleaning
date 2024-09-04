@@ -1,0 +1,11 @@
+PatientID,Age,Gender,TumorSize,NodeStatus,TreatmentType,SurvivalStatus
+1,45,Female,2.3,Positive,Chemotherapy,Survived
+2,54,Male,3.1,Negative,Surgery,Survived
+3,63,Female,,Positive,Radiation,Did Not Survive
+4,37,Female,2.0,Positive,Surgery,Survived
+5,50,Male,4.2,,Chemotherapy,Did Not Survive
+6,67,Female,3.5,Positive,Chemotherapy,Survived
+7,29,Female,1.8,Negative,Surgery,Survived
+8,55,Male,,Negative,Radiation,Did Not Survive
+9,43,Male,2.9,Positive,Chemotherapy,Survived
+10,38,Female,2.6,Negative,Surgery,Survived
