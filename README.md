@@ -18,7 +18,7 @@ This project is an Automated Data Cleaning and Preprocessing Tool designed to ha
 ├── data/
 │   └── data.csv                     # Raw dataset
 ├── reports/
-│   └── cleaned_data.csv  # Cleaned dataset output
+│   └── cleaned_data.csv             # Cleaned dataset output
 ├── scripts/
 │   └── main.py                      # Main Python script for data cleaning
 ├── .venv/                           # Python virtual environment (optional)
