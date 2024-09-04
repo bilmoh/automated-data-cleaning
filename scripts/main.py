@@ -10,13 +10,21 @@ df = pd.read_csv(file_path)
 print("Initial Data:")
 print(df.head())
 
-
 def handle_missing_values(df):
+    # Handle numeric columns
     num_imputer = SimpleImputer(strategy='mean')
     df[df.select_dtypes(include=[np.number]).columns] = num_imputer.fit_transform(df.select_dtypes(include=[np.number]))
 
+    # Handle categorical columns
     cat_imputer = SimpleImputer(strategy='most_frequent')
     df[df.select_dtypes(include=[object]).columns] = cat_imputer.fit_transform(df.select_dtypes(include=[object]))
+    
+    # Correct formatting for specific columns
+    if 'PatientID' in df.columns:
+        df['PatientID'] = df['PatientID'].astype(int)  # Convert PatientID to integer
+    
+    if 'Age' in df.columns:
+        df['Age'] = df['Age'].round(0).astype(int)  # Convert Age to integer
     
     return df
 
