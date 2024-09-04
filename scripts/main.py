@@ -44,3 +44,4 @@ output_path = '../reports/cleaned_data.csv'
 df_cleaned.to_csv(output_path, index=False)
 
 print(f"Cleaned data saved to {output_path}")
+
